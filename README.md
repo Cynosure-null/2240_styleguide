@@ -79,5 +79,10 @@ Comments tell you why certain code was written, code tells you how it works.
 For constants, use `static const type NAME = value;`, instead of `#DEFINE NAME value`
 Avoid using "magic numbers" (such as a pre-determined RPM or a known distance) directly in functions, instead, use a constant variable.
 
+Pointers should be declared with the askerisk before the name, not the type. An example of this would be:
+`int *ptr; //do this`
+As opposed to:
+`int* ptr; //not this`
+
 ---
 This guide was based off the [GNU C style guide](https://www.gnu.org/prep/standards/html_node/Writing-C.html)
