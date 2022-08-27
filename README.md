@@ -59,7 +59,8 @@ an example would be `m_variable_defined_in_header_file` note the snake_case
 
 ## Comments
 
-Each class and method should have a documentation comment explaining what it does and why
+Each class and method should have a documentation comment explaining what it does and why, unless the code is self explanitory.
+Documentation comments should go directly below the opening bracket of the method or the very start of a class header.
 ```
 /**
 * This is an example documentation comment
