@@ -51,7 +51,7 @@ PascalCase is a capital letter at the start of each word, including the first le
 
 Mutable variables, methods and functions should use snake_case, where all letters are lowercase and separated with underscores.
 
-Constant variables should use SCREAMING_SNAKE_CASE, with all letters capitalized and words separated by underscores
+Constant variables (including motors) should use SCREAMING_SNAKE_CASE, with all letters capitalized and words separated by underscores
 
 Hungarian notation should not be used as it makes variables less legible.
 However, for mutable variables defined in a header file (such as joystick), their names should start with an `m_`
