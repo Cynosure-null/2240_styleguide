@@ -46,12 +46,14 @@ If your editor has the capability to, enable GNU style indentation in settings.
 ## Naming
 
 ### Cases
-All namespaces, classes and files should use PascalCase.
+All classes and files should use PascalCase.
 PascalCase is a capital letter at the start of each word, including the first letter.
 
 Mutable variables, methods and functions should use snake_case, where all letters are lowercase and separated with underscores.
 
 Constant variables (including motors) should use SCREAMING_SNAKE_CASE, with all letters capitalized and words separated by underscores
+
+Namespaces should use SCREAMING_SNAKE_CASE as well.
 
 Hungarian notation should not be used as it makes variables less legible.
 However, for mutable variables defined in a header file (such as joystick), their names should start with an `m_`
@@ -77,8 +79,9 @@ Comments tell you why certain code was written, code tells you how it works.
 
 ## Misc.
 
-For constants, use `static const type NAME = value;`, instead of `#DEFINE NAME value`
+For constants, use `constexpr type NAME = value;`, instead of `#DEFINE NAME value` or `static const type NAME = value;`
 Avoid using "magic numbers" (such as a pre-determined RPM or a known distance) directly in functions, instead, use a constant variable.
+All constants should be in one file, seperated by namespace.
 
 Pointers should be declared with the askerisk before the name, not the type. An example of this would be:
 `int *ptr; //do this`
