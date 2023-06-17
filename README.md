@@ -1,4 +1,5 @@
 # Brute Force Style Guide
+For an automated system, copy .clang_format to project root and use clang-format, either in the termial or with the [vscode extention](https://code.visualstudio.com/docs/cpp/cpp-ide#_list-members)
 
 ## Disclaimer
 The point of a style guide is to make code easier to read and expand, not make it harder.
